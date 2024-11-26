@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap");
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Parkinsans", sans-serif;
+}
+
+img {
+  width: 10%;
+  height: 80%;
+  padding-left: 1%;
+}
+nav {
+  width: 100%;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: white;
+}
+
+/* Large Screen Specific Styles */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Navbar Box (Logo, Menu, Icons) */
+.another-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 100px; /* Adjust height */
+  background-color: rgb(255, 255, 255); /* Light background */
+  border: 1px solid #d9d5d5;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin: 2rem;
+}
+
+/* Flex Container for Icons and Buttons */
+.flex-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Dropdown Button Styles */
+.dropDown1 {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* 'Book Now' Button Styles */
+.But {
+  display: block;
+  background-color: #c2a74e;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 29px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+/* Box containing menu for larger screens */
+.box {
+  display: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  padding-top: 0rem;
+}
+
+/* Navigation Text Link Style */
+.text-element {
+  line-height: normal;
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for text links */
+.text-element:hover {
+  color: #c2a74e; /* Hover text color */
+}
+
+/* UL styling for links */
+.UL {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mobileDropDown {
+  display: block; /* Equivalent to showing the element on small screens */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  padding-left: 1.5rem; /* Equivalent to px-6 for horizontal padding */
+  padding-right: 1.5rem;
+  position: fixed; /* Fixed position relative to the viewport */
+  top: 9rem; /* Top offset of 6rem (96px) */
+  background-color: white; /* White background */
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+.text-element2 {
+  padding-left: 1.5rem; /* px-6 */
+  padding-right: 1.5rem; /* px-6 */
+  height: 2.5rem; /* h-10 */
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  line-height: normal; /* leading-normal */
+  text-decoration: none; /* no-underline */
+  font-weight: bold; /* font-bold */
+  font-size: 15px; /* text-[15px] */
+  border: 0; /* border-0 */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* border-b and border-[#ffffff1a] */
+}
+.mobile2 {
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Arrange items in a column */
+  width: 100%; /* Full width */
+  align-items: baseline; /* Align items to the baseline */
+  gap: 1rem;
+}
+
+.mobileDrop2 {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Arranges items in a column */
+  justify-content: center; /* Vertically centers items */
+  width: 100%;
+}
+/* Specific Styles for extra-large screens */
+@media (min-width: 1280px) {
+  .UL {
+    gap: 3rem;
+  }
+}
+
+/* Hide UL on smaller screens */
+@media (max-width: 1024px) {
+  .UL {
+    display: none;
+  }
+}
+
+/* Show Box on larger screens */
+@media (min-width: 1024px) {
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+
+/* Hover effect on Book Now button */
+.But:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Hide dropdown icon on large screens */
+@media (min-width: 1024px) {
+  .dropDown1 {
+    display: none;
+  }
+}
+
+/* Specific Styles for Larger Screens */
+@media (min-width: 1024px) {
+  nav {
+    padding-bottom: 2rem;
+    position: relative;
+    background-color: transparent;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
